@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>"MyScript"</title>
+	
+	</head>
+
+	<body>
+	<script type="text/javascript">
+	var associativeArray = {};
+		associativeArray["one"] = "Come with me! ";
+		associativeArray["two"] = "Run ";
+		associativeArray["three"] = " what do we have here now? ";
+		associativeArray["last"] = " la la la la la la la la";
+
+		alert("We're playing Hip-Hop Madlibs!")
+
+		var first = prompt(associativeArray["one"] + "__________");
+		var second = prompt(associativeArray["one"] + first + " " + associativeArray["two"] + "__________");
+		var third =  prompt(associativeArray["one"] + first + " " + associativeArray["two"] + second + " " + associativeArray["three"] + "__________");
+
+		var finality = (associativeArray["one"] + first + " " + associativeArray["two"] +  second + " " + associativeArray["three"] + third + " " + associativeArray["last"]);
+		alert(finality);
+	</script>
+
+	</body>
+</html>
